@@ -23,10 +23,9 @@ class Song
       song
   end
 
-  def create_by_name(name)
-    @name = name
-    self.Song.all << @name
-    self
+  def create_by_name(title)
+    song = self.new_by_name
+    song.save
   end
 
 
