@@ -11,9 +11,9 @@ class Song
   end
 
 ####
-  def create
+  def create(song)
       save
-    self
+    @@all
   end
 
   def new_by_name(name)
