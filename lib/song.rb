@@ -11,8 +11,8 @@ class Song
   end
 
 ####
-  def self.create
-    self.Song.all << self
+  def create
+      save
     self
   end
 
