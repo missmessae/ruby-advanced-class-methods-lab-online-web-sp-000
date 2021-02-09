@@ -7,12 +7,12 @@ class Song
   end
 
   def save
-    self.class.all << self
+    self.Song.all << self
   end
 
 ####
   def self.create
-    self.class.all << self
+    self.Song.all << self
     self
   end
 
@@ -23,7 +23,7 @@ class Song
 
   def create_by_name(name)
     @name = name
-    self.class.all << @name
+    self.Song.all << @name
     self
   end
 
