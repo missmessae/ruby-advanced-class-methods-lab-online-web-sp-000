@@ -36,7 +36,8 @@ class Song
   def find_or_create_by_name(title)
     if self.find_by_name(title) == false
       self.create_by_name
-    else      
+    else
+    end
   end
 
 
