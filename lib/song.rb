@@ -20,7 +20,10 @@ class Song
     self
   end
 
-
+  def create_by_name(name)
+    @name = name
+    self.class.all << @name
+  end
 
 
 end
